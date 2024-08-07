@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sales Order Form</title>
+</head>
+<body>
+    <body>
+        <body>
+            <div class="container">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRE5EttBlRAwtmiGCyZjNMRG4bVXs1o2CtGJQSTG1eRv_e1__BF">
+                <h1>Sales Order Form</h1>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <form id="contact-form" action="https://github.com/reinass/netlify-form-work.git" method="POST" netlify>
+                    <fieldset>
+                        <legend>Salesman Information</legend>
+                        <label for="salesmanName">Salesman Name:</label>
+                        <input type="hidden" name="access_key" value="fee02be3-44ce-48af-907e-f8eb52d22f21">
+                <input type="text" id="salesmanName" name="salesmanName" required>
+
+                <label for="salesmanID">Salesman ID:</label>
+                <input type="text" id="salesmanID" name="salesmanID" > <!-- Optional field -->
+
+                <label for="salesmanEmail">Email:</label>
+                <input type="email" id="salesmanEmail" name="salesmanEmail" required>
+
+                <label for="salesmanPhone">Phone Number:</label>
+                <input type="tel" id="salesmanPhone" name="salesmanPhone" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label for="customerName">Customer Name:</label>
+                <input type="text" id="customerName" name="customerName" required>
+
+                <label for="customerID">Customer ID:</label>
+                <input type="text" id="customerID" name="customerID">
+
+                <label for="contactPerson">Contact Person:</label>
+                <input type="text" id="contactPerson" name="contactPerson"> <!-- Optional field -->
+
+                <label for="customerPhone">Phone Number:</label>
+                <input type="tel" id="customerPhone" name="customerPhone" required>
+
+                <label for="customerEmail">Email:</label>
+                <input type="email" id="customerEmail" name="customerEmail">
+
+                <label for="shippingAddress">Shipping Address:</label>
+                <textarea id="shippingAddress" name="shippingAddress" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Order Details</legend>
+                <div id="productList">
+                    <div class="product">
+                        <label for="productName">Product Name:</label>
+                        <input type="text" class="productName" name="productName" required>
+
+                        <label for="productCode">Product Code:</label>
+                        <input type="text" class="productCode" name="productCode" required>
+
+                        <label for="quantityOrdered">Quantity Ordered:</label>
+                        <input type="number" class="quantityOrdered" name="quantityOrdered" min="1" required>
+
+                        <label for="unitPrice">Unit Price:</label>
+                        <input type="number" class="unitPrice" name="unitPrice" step="0.01" required>
+
+                        <label for="totalPrice">Total Price:</label>
+                        <input type="text" class="totalPrice" name="totalPrice" readonly>
+                    </div>
+                </div>
+                <button type="button" id="addProduct">Add More Products</button>
+            </fieldset>
+            <fieldset>
+                <legend>Payment Information</legend>
+                <label for="paymentMethod">Payment Method:</label>
+                <select id="paymentMethod" name="paymentMethod" required>
+                    <option value="">Select...</option>
+                    <option value="creditCard">Credit Card</option>
+                    <option value="cash">Cash</option>
+                    <option value="invoice">Invoice</option>
+                </select>
+
+                <label for="invoiceNumber">Invoice Number (if applicable):</label>
+                <input type="text" id="invoiceNumber">
+            </fieldset>
+
+            <fieldset>
+                <legend>Comments/Notes</legend>
+                <label for="specialInstructions">Special Instructions:</label>
+                <textarea id="specialInstructions"></textarea>
+            </fieldset>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <form id="salesOrderForm" action="https://formspree.io/f/yourFormID" method="POST">
+</body>
+</html>
